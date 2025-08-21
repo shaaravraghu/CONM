@@ -46,7 +46,6 @@ int main() {
                 for (int j = 0; j < n; j++)
                     if (i != j) x[i] -= A[i][j] * x[j];
                 x[i] /= A[i][i];
-                B[i] = x[i];
                 error += abs(x[i] - old);
             }
         }
@@ -60,4 +59,5 @@ int main() {
     }
     
     return 0;
+
 }
